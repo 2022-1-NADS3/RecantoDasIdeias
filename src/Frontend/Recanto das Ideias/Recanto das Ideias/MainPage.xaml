@@ -1,0 +1,59 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Recanto_das_Ideias.App">
+
+    <StackLayout>
+        <Frame BackgroundColor="#32ADA5" Padding="24" CornerRadius="0">
+            <Label Text="Welcome to Xamarin.Forms!" HorizontalTextAlignment="Center" TextColor="White" FontSize="36"/>
+        </Frame>
+        <Entry x:Name="E-MAIL" Text="E-MAIL"/>
+        <Label Text="Make changes to your XAML file and save to see your UI update in the running app with XAML Hot Reload. Give it a try!" FontSize="16" Padding="30,0,30,0"/>
+        <Label FontSize="16" Padding="30,24,30,0">
+            <Label.FormattedText>
+                <FormattedString>
+                    <FormattedString.Spans>
+                        <Span Text="Learn more at "/>
+                        <Span Text="https://aka.ms/xamarin-quickstart" FontAttributes="Bold"/>
+                    </FormattedString.Spans>
+                </FormattedString>
+            </Label.FormattedText>
+        </Label>
+    </StackLayout>
+
+</ContentPage>
+
+
+<!--
+<StackLayout>
+        <Frame BackgroundColor="#32ada5" Padding="24" CornerRadius="0"/>
+        <Label Text="JSON was here!" x:Name="json"/>
+        <Button Text="Chama o JSON" Clicked="dados"/>
+        <Label Text="Nome do Usuario"/>
+        <Label Text="nnnn" x:Name="UserFirstName"/>
+        <Label Text="Sobrenome do Usuario"/>
+        <Label Text="nnnn" x:Name="UserLastName"/>
+        <Label Text="Idade do Usuario"/>
+        <Label Text="nnnn" x:Name="UserAge"/>
+        <Label Text="Altura do Usuario"/>
+        <Label Text="nnnn" x:Name="UserHeight"/>
+        <Label Text="Recanto das Ideias" HorizontalTextAlignment="Center" TextColor="#fa5c0c" FontSize="36"/>
+    </StackLayout>
+    <StackLayout Orientation="Horizontal">
+        <Label Text="Nome Completo:"/>
+        <Entry Placeholder="Insira seu nome"/>
+    </StackLayout>
+    <StackLayout Orientation="Horizontal">
+    <Label Text="CPF:"/>
+    <Entry Placeholder="Insira seu CPF"/>
+    </StackLayout>
+    <StackLayout Orientation="Horizontal">
+    <Label Text="Data de Nascimento:"/>
+    <Entry Placeholder="Insira sua data de nascimento"/>
+    </StackLayout>
+    <StackLayout Orientation="Horizontal">
+        <Label Text="Faculdade:"/>
+        <Entry Placeholder="Insira sua faculdade"/>
+    </StackLayout>
+    
+    -->
