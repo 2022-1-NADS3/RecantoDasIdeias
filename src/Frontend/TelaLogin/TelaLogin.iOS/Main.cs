@@ -5,7 +5,7 @@ using System.Linq;
 using Foundation;
 using UIKit;
 
-namespace Teste.iOS
+namespace TelaLogin.iOS
 {
     public class Application
     {

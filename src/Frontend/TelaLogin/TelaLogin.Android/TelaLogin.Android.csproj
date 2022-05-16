@@ -3,12 +3,12 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{D6F293A8-D833-438B-8D92-ADB986788DB0}</ProjectGuid>
+    <ProjectGuid>{50E94C11-76E2-4F0D-9FDE-912B7CA36003}</ProjectGuid>
     <ProjectTypeGuids>{EFBA0AD7-5A72-4C68-AF49-83D382785DCF};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
     <TemplateGuid>{c9e5eea5-ca05-42a1-839b-61506e0a37df}</TemplateGuid>
     <OutputType>Library</OutputType>
-    <RootNamespace>Teste.Droid</RootNamespace>
-    <AssemblyName>Teste.Android</AssemblyName>
+    <RootNamespace>TelaLogin.Droid</RootNamespace>
+    <AssemblyName>TelaLogin.Android</AssemblyName>
     <Deterministic>True</Deterministic>
     <AndroidApplication>True</AndroidApplication>
     <AndroidResgenFile>Resources\Resource.designer.cs</AndroidResgenFile>
@@ -83,14 +83,15 @@
     <AndroidResource Include="Resources\mipmap-xxxhdpi\icon.png" />
     <AndroidResource Include="Resources\mipmap-xxxhdpi\launcher_foreground.png" />
   </ItemGroup>
+  <ItemGroup />
   <ItemGroup>
-    <AndroidResource Include="Resources\drawable\Logo.png" />
+    <ProjectReference Include="..\TelaLogin\TelaLogin.csproj">
+      <Project>{BC879331-3DC9-49EC-BD34-A28EFE74D03A}</Project>
+      <Name>TelaLogin</Name>
+    </ProjectReference>
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\Teste\Teste.csproj">
-      <Project>{FEA53D67-2B7D-4270-B839-330BA1937B7A}</Project>
-      <Name>Teste</Name>
-    </ProjectReference>
+    <AndroidResource Include="Resources\drawable\Logo.jpg" />
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath)\Xamarin\Android\Xamarin.Android.CSharp.targets" />
 </Project>

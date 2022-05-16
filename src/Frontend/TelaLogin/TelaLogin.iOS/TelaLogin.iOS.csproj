@@ -5,13 +5,13 @@
     <Platform Condition=" '$(Platform)' == '' ">iPhoneSimulator</Platform>
     <ProductVersion>8.0.30703</ProductVersion>
     <SchemaVersion>2.0</SchemaVersion>
-    <ProjectGuid>{D8FD2100-9E0A-45A5-A4A2-488072C015A6}</ProjectGuid>
+    <ProjectGuid>{9C42653B-00FE-4534-B33A-C54F5AC9D913}</ProjectGuid>
     <ProjectTypeGuids>{FEACFBD2-3405-455C-9665-78FE426C6842};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
     <TemplateGuid>{6143fdea-f3c2-4a09-aafa-6e230626515e}</TemplateGuid>
     <OutputType>Exe</OutputType>
-    <RootNamespace>Teste.iOS</RootNamespace>
+    <RootNamespace>TelaLogin.iOS</RootNamespace>
     <IPhoneResourcePrefix>Resources</IPhoneResourcePrefix>
-    <AssemblyName>Teste.iOS</AssemblyName>
+    <AssemblyName>TelaLogin.iOS</AssemblyName>
     <MtouchEnableSGenConc>true</MtouchEnableSGenConc>
     <MtouchHttpClientHandler>NSUrlSessionHandler</MtouchHttpClientHandler>
     <ProvisioningType>automatic</ProvisioningType>
@@ -128,9 +128,9 @@
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath)\Xamarin\iOS\Xamarin.iOS.CSharp.targets" />
   <ItemGroup>
-    <ProjectReference Include="..\Teste\Teste.csproj">
-      <Project>{FEA53D67-2B7D-4270-B839-330BA1937B7A}</Project>
-      <Name>Teste</Name>
+    <ProjectReference Include="..\TelaLogin\TelaLogin.csproj">
+      <Project>{BC879331-3DC9-49EC-BD34-A28EFE74D03A}</Project>
+      <Name>TelaLogin</Name>
     </ProjectReference>
   </ItemGroup>
 </Project>
