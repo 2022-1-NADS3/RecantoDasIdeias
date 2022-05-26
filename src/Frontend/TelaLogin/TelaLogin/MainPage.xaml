@@ -1,0 +1,44 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="TelaLogin.MainPage">
+
+    <Grid BackgroundColor="White">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="50"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="50"/>
+        </Grid.RowDefinitions>
+        <StackLayout>
+            <Frame BackgroundColor="#ffffff" Padding="24" CornerRadius="0"/>
+            <Image Source="Logo.png"
+       Aspect="Fill"
+       HeightRequest="{OnPlatform iOS=300, Android=160}"
+       WidthRequest="{OnPlatform iOS=300, Android=230}"
+       HorizontalOptions="Center" />
+        </StackLayout>
+        <Grid Grid.Row="1" Margin="20,0,20,0">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="*"/>
+                <RowDefinition Height="50"/>
+                <RowDefinition Height="50"/>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="40"/>
+                <RowDefinition Height="40"/>
+                <RowDefinition Height="*"/>
+            </Grid.RowDefinitions>
+            <Entry Grid.Row="1" Placeholder="Email ou Telefone" PlaceholderColor="#bababa" FontSize="16"/>
+            <Entry Grid.Row="2" Placeholder="Senha" PlaceholderColor="#bababa" FontSize="16" IsPassword="True"/>
+            <Button Text="LogIn" BackgroundColor="#3897f0" TextColor="White" HeightRequest="50" 
+VerticalOptions="Start" Grid.Row="3"/>
+            <Label Text="Problemas no Login? " HorizontalOptions="Center" Grid.Row="4" Margin="0,10,0,0" 
+FontSize="12"/>
+        </Grid>
+        <StackLayout Grid.Row="2" BackgroundColor="#ffffff">
+            <Label HeightRequest="1" BackgroundColor="#e3e3e3"/>
+            <Label Text="Não possui uma Conta? Registre-se." VerticalOptions="FillAndExpand" 
+VerticalTextAlignment="Center"
+                      HorizontalTextAlignment="Center"/>
+        </StackLayout>
+    </Grid>
+</ContentPage>
