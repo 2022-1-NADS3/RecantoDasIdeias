@@ -1,0 +1,168 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="AppRecantoDasIdeias.CadastroAluno">
+    <ScrollView HeightRequest="3000">
+        <StackLayout>
+
+
+            <Frame BackgroundColor="#FD8D25" Padding="24" CornerRadius="0">
+                <Label Text="Cadastro aluno" HorizontalTextAlignment="Center" TextColor="White" FontSize="24" FontAttributes="Bold"/>
+            </Frame>
+            <Frame BackgroundColor="White" Padding="20" CornerRadius="0">
+                <Label Text="Insira seus dados abaixo" HorizontalTextAlignment="Center" TextColor="#FD8D25" FontSize="18"  />
+            </Frame>
+            <StackLayout HorizontalOptions="FillAndExpand"  Margin="25,10,0,0">
+                <Label Text="Nome completo" TextColor="#F77705" FontSize="Medium" />
+
+            </StackLayout>
+
+
+            <StackLayout Margin="0,2,0,0">
+
+
+                <Frame BackgroundColor="Transparent" BorderColor="Orange" Padding="5" Margin="5" CornerRadius="25" HorizontalOptions="FillAndExpand">
+
+                    <StackLayout Orientation="Vertical" Margin="25,0">
+                        <Entry Keyboard="Text" PlaceholderColor="#FFFDFD" />
+
+                    </StackLayout>
+
+                </Frame>
+
+            </StackLayout>
+
+            <StackLayout HorizontalOptions="FillAndExpand"  Margin="25,10,0,0">
+                <Label Text="CPF" TextColor="#F77705" FontSize="Medium" />
+
+            </StackLayout>
+
+            <StackLayout Margin="0,6,0,0">
+
+
+                <Frame BackgroundColor="Transparent" BorderColor="Orange" Padding="5" Margin="5" CornerRadius="25" HorizontalOptions="FillAndExpand">
+
+                    <StackLayout Orientation="Vertical" Margin="25,0">
+                        <Entry Keyboard="Numeric" PlaceholderColor="#FFFDFD" />
+
+                    </StackLayout>
+
+                </Frame>
+
+            </StackLayout>
+
+            <StackLayout HorizontalOptions="FillAndExpand"  Margin="25,10,0,0">
+                <Label Text="Faculdade" TextColor="#F77705" FontSize="Medium" />
+
+            </StackLayout>
+
+            <StackLayout Margin="0,6,0,0">
+
+
+                <Frame BackgroundColor="Transparent" BorderColor="Orange" Padding="5" Margin="5" CornerRadius="25" HorizontalOptions="FillAndExpand">
+
+                    <StackLayout Orientation="Vertical" Margin="25,0">
+                        <Entry Keyboard="Text" PlaceholderColor="#FFFDFD" />
+
+                    </StackLayout>
+
+                </Frame>
+
+            </StackLayout>
+
+            <StackLayout HorizontalOptions="FillAndExpand"  Margin="25,10,0,0">
+                <Label Text="Curso" TextColor="#F77705" FontSize="Medium" />
+
+            </StackLayout>
+
+            <StackLayout Margin="0,6,0,0">
+
+
+                <Frame BackgroundColor="Transparent" BorderColor="Orange" Padding="5" Margin="5" CornerRadius="25" HorizontalOptions="FillAndExpand">
+
+                    <StackLayout Orientation="Vertical" Margin="25,0">
+                        <Entry Keyboard="Text" PlaceholderColor="#FFFDFD" />
+
+                    </StackLayout>
+
+                </Frame>
+
+            </StackLayout>
+
+            <StackLayout HorizontalOptions="FillAndExpand"  Margin="25,10,0,0">
+                <Label Text="Data de conclusão" TextColor="#F77705" FontSize="Medium" />
+
+            </StackLayout>
+
+            <StackLayout Margin="0,6,0,0">
+
+
+                <Frame BackgroundColor="Transparent" BorderColor="Orange" Padding="5" Margin="5" CornerRadius="25" HorizontalOptions="FillAndExpand">
+
+                    <StackLayout Orientation="Vertical" Margin="25,0">
+                        <Entry Keyboard="Text" PlaceholderColor="#FFFDFD" />
+
+                    </StackLayout>
+
+                </Frame>
+
+            </StackLayout>
+
+            <StackLayout HorizontalOptions="FillAndExpand"  Margin="25,10,0,0">
+                <Label Text="E-mail" TextColor="#F77705" FontSize="Medium" />
+
+            </StackLayout>
+
+
+            <StackLayout Margin="0,6,0,0">
+
+
+                <Frame BackgroundColor="Transparent" BorderColor="Orange" Padding="5" Margin="5" CornerRadius="25" HorizontalOptions="FillAndExpand">
+
+                    <StackLayout Orientation="Vertical" Margin="25,0">
+                        <Entry Keyboard="Email" PlaceholderColor="#FFFDFD" />
+
+                    </StackLayout>
+
+                </Frame>
+
+            </StackLayout>
+
+            <StackLayout HorizontalOptions="FillAndExpand"  Margin="15,0,0,0">
+                <Label Text="Senha" TextColor="#F77705" FontSize="Medium" />
+
+            </StackLayout>
+
+            <StackLayout Margin="0,2,0,0">
+
+
+                <Frame BackgroundColor="Transparent" BorderColor="Orange" Padding="7" Margin="5" CornerRadius="50" HorizontalOptions="FillAndExpand">
+
+                    <StackLayout Orientation="Vertical" Margin="25,0">
+                        <Entry Keyboard="Text" PlaceholderColor="#FFFDFD" />
+
+                    </StackLayout>
+
+                </Frame>
+
+            </StackLayout>
+
+            <StackLayout>
+                <Button Text="Registrar" Clicked="Proxima_pagina1"
+
+                 TextColor="White"
+                 BackgroundColor="#FD8D25"
+                 BorderWidth="5"
+                 CornerRadius="10"
+                 WidthRequest="400"
+                 HeightRequest="50"
+                 HorizontalOptions="CenterAndExpand" Margin="125, 55" />
+            </StackLayout>
+
+        </StackLayout>
+    </ScrollView>
+
+
+
+
+</ContentPage>

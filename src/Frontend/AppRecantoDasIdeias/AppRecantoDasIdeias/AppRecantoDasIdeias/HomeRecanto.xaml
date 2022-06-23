@@ -1,0 +1,41 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="AppRecantoDasIdeias.HomeRecanto">
+    
+    <ScrollView>
+        <StackLayout Margin="1,1" BackgroundColor="White">
+
+            <Button Image="batePapo.png" Clicked="Button_Clicked"
+                    BackgroundColor="White"
+                    BorderRadius="10"
+                    BorderWidth="2"
+                    HorizontalOptions="EndAndExpand"/>
+
+            <Image Source="Logotipo.png" />
+            <Button Image="lupa05.png" Clicked="Button_Clicked_1"
+                    BackgroundColor="White"
+                    BorderRadius="10"
+                    BorderWidth="2"
+                    HorizontalOptions="Start" />
+
+            <Line X1="500" Y1="0"
+                  Stroke="#C0C0C0"/>
+
+
+            
+            <Image Source="image2.png" Margin="5,200,25,0" HorizontalOptions="CenterAndExpand" VerticalOptions="CenterAndExpand" />
+            <Label Text="aqui você pode colocar a imagem do seu projeto, fazer um breve resumo dele na descrição." TextColor="#1C1C1C" FontSize="15" Margin="15,0"/>
+            <Image Source="image6.png" Margin="5,150,25,0" HorizontalOptions="CenterAndExpand" VerticalOptions="CenterAndExpand" />
+            <Label Text="aqui você pode colocar a imagem do seu projeto, fazer um breve resumo dele na descrição." TextColor="#1C1C1C" FontSize="15" Margin="15,0"/>
+            <Image Source="image5.png" Margin="5,150,25,0" HorizontalOptions="CenterAndExpand" VerticalOptions="CenterAndExpand" />
+            <Label Text="aqui você pode colocar a imagem do seu projeto, fazer um breve resumo dele na descrição." TextColor="#1C1C1C" FontSize="15" Margin="15,0"/>
+            <Image Source="image3.jpg" Margin="5,150,25,0" HorizontalOptions="CenterAndExpand" VerticalOptions="CenterAndExpand" />
+            <Label Text="aqui você pode colocar a imagem do seu projeto, fazer um breve resumo dele na descrição." TextColor="#1C1C1C" FontSize="15" Margin="15,0,0,50"/>
+            
+        </StackLayout>
+    </ScrollView>
+
+
+
+</ContentPage>
