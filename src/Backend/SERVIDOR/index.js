@@ -1,20 +1,44 @@
 var express = require("express");
+const cors = require('cors');
+const { Pool } = require('pg');
+const { json } = require('express/lib/response');
+require('dotenv').config();
 var app = express();
 var port = process.env.port || 3000;
 var hostname = "localhost";
-const json = '{"nome": "william","sobrenome":"silva","altura":1.70}';
-var objeto = JSON.parse(json);
-
-app.get("/teste", function(req, res) {
-    var nome = req.query.nome;
-    res.send("Hello!" + objeto.nome + objeto.sobrenome + objeto.altura);
-    console.log("passei aqui!");
+ 
+const pool = new Pool({
+   connectionString: process.env.HEROKU_POSTGRESQL_URL,
+   ssl: {
+       rejectUnauthorized: false
+   }
 });
+ 
+const app = express();
+ 
+app.use(express.json());
+app.use(cors());
+ 
 
-app.get("/teste1", function(req, res) {
-    res.send("Hello denovo!");
-    console.log("passei aqui oops!");
-});
+
+ 
+ 
+ app.post('/login', async (req, res) => {
+  
+     const { useremail, userpassword } = req.body
+ 
+     let user = ''
+     try {
+         user = await pool.query('SELECT * FROM user_login WHERE user_email = ($1)', [useremail])
+         if(!user.rows[0]){
+             user = await pool.query("INSERT INTO user_login(user_email, user_password) VALUES($1, $2) RETURNING *", [useremail, userpassword])
+         }
+         return res.status(200).send(user.rows)
+     }catch(err){
+         return res.status(400).send(err)
+     }
+   
+ });
 
 app.listen(port, hostname, () => {
     console.log("servidor https://"+ hostname + ":" + port);
